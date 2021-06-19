@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-const URL = `${location.protocol}//${location.hostname}:8000`;
+const URL = `${window.location.protocol}//${window.location.hostname}:8000`;
 
 function RadioApartamentos(props) {
   const APARTAMENTOS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
