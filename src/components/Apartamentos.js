@@ -7,7 +7,7 @@ function RadioApartamentos(props) {
   return (<div>{APARTAMENTOS.map(name => (
     <div className="control" key={name}>
       <label className="radio">
-        <input className="radio" type="radio" name="apartamento" selected={props.value === name} value={name} onChange={e => props.onChange(e.target.value)} />
+        <input className="radio" type="radio" name="apartamento" checked={props.value === name} value={name} onChange={e => props.onChange(e.target.value)} />
         Apartamento {name}
       </label>
     </div>
